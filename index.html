@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Gradient Background</title>
+    <script
+      src="https://kit.fontawesome.com/93e6301b95.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body id="gradient">
-    <h1>Gradient Background Generator</h1>
-    <input class="color1" type="color" name="color1" />
-    <input class="color2" type="color" name="color2" /><br />
-    <button>Random</button>
-    <h2>This is the actual Background</h2>
-    <h3></h3>
+    <div class="card">
+      <div class="container">
+        <h1>Gradient Background Generator</h1>
+        <div class="controls">
+          <input class="color1" type="color" name="color1" />
+          <input class="color2" type="color" name="color2" />
+          <button>Random</button>
+        </div>
+
+        <h2>This is the actual Background</h2>
+        <h3></h3>
+        <button class="copy"><i class="far fa-copy"></i></button>
+      </div>
+    </div>
 
     <script type="text/javascript" src="bundle.js"></script>
   </body>
