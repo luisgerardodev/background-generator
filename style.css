@@ -24,7 +24,7 @@ body {
   width: 70%;
   height: 98vh;
   margin: auto;
-  padding: 15px;
+  /* padding: 15px; */
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.1);
@@ -86,27 +86,9 @@ button {
 
 /* Media Queries ----------------- */
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.5em;
-  }
-
-  h2 {
-    margin: 20px;
-  }
-
-  h3 {
-    margin: 50px;
-  }
-  .card {
-    padding: 0;
-  }
-}
-
 @media (max-width: 1050px) {
   .container {
     width: 100%;
-    padding: 50px;
   }
 
   .card {
@@ -131,5 +113,67 @@ button {
   input[type="color"] {
     width: 3.5rem;
     height: 3.5rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h2,
+  h3 {
+    margin: 10px;
+  }
+
+  .card {
+    width: 100%;
+    margin: auto;
+  }
+
+  .container {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .controls {
+    width: 100%;
+    margin: 50px 0;
+  }
+}
+
+/* iPhone 5 ------------------ */
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h2,
+  h3 {
+    margin: 10px;
+  }
+
+  .card {
+    width: 100%;
+    margin: auto;
+  }
+
+  .container {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .controls {
+    width: 100%;
+    margin: 50px 0;
   }
 }
