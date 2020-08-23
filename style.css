@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+}
+
 .copy {
   cursor: pointer;
 }
@@ -12,19 +19,23 @@ body {
   text-align: center;
   text-transform: uppercase;
   background: linear-gradient(to right, red, yellow);
+  display: flex;
 }
 
 .container {
   width: 80%;
   height: 100%;
   margin: auto;
+  padding: 70px 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
 }
 
 .card {
-  width: 70%;
-  height: 98vh;
+  width: 95%;
+  height: 96%;
   margin: auto;
-  /* padding: 15px; */
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.1);
@@ -38,17 +49,13 @@ h1 {
   width: 100%;
 }
 
-h2 {
-  margin: 50px;
-}
-
 h3 {
   font: 900 1em "Raleway", sans-serif;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: none;
   letter-spacing: 0.01em;
-  margin: 50px;
+  margin: 20px;
 }
 
 /* Gradient Controls ----------------- */
@@ -86,53 +93,49 @@ button {
 
 /* Media Queries ----------------- */
 
-@media (max-width: 1050px) {
-  .container {
-    width: 100%;
+@media (min-width: 961px) {
+  .card {
+    width: 60%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  h1 {
+    font-size: 2em;
   }
 
   .card {
-    width: 100vw;
-    height: 100vh;
+    width: 80%;
   }
 
+  .container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
   h1 {
-    font-size: 1.9em;
+    font-size: 1.5em;
   }
 
   h2 {
     font-size: 1.2em;
     margin: 20px;
   }
-
-  h3 {
-    font: 700 1em "Raleway", sans-serif;
-    margin: 20px;
-  }
-
-  input[type="color"] {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
   h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   h2,
   h3 {
-    margin: 10px;
-  }
-
-  .card {
-    width: 100%;
-    margin: auto;
+    margin: 15px;
   }
 
   .container {
@@ -141,7 +144,6 @@ button {
   }
 
   .controls {
-    width: 100%;
     margin: 50px 0;
   }
 }
@@ -162,18 +164,7 @@ button {
     margin: 10px;
   }
 
-  .card {
-    width: 100%;
-    margin: auto;
-  }
-
   .container {
     padding: 25px;
-    text-align: center;
-  }
-
-  .controls {
-    width: 100%;
-    margin: 50px 0;
   }
 }
